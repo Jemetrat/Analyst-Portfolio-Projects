@@ -2,7 +2,7 @@
 SELECT * FROM top_movies.imdb_top_250_moviesv1;
 
 -- find the top 10 highest ranking movies based off ratings
-select ranking, title, rating
+select ranking, title, released_date, rating
 from imdb_top_250_moviesv1
 where rating >= 8.5
 order by rating desc
